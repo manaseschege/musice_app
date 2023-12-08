@@ -48,7 +48,7 @@ class SplashScreenController {
   changeCurrentShowing() async {
     if (currentShowing.value == bodyData.length - 1) {
 
-      currentShowing.value = 0;
+      return;
     } else {
 
       currentShowing.value = currentShowing.value + 1;
