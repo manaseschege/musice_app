@@ -38,7 +38,9 @@ dependencies:
   google_fonts:
   get:
   image_fade: ^0.6.2
-  flutter_bluetooth_basic: ^0.1.7
+  bluetooth_classic: ^0.0.1
+  shared_preferences: ^2.2.2
+  dio: ^5.4.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

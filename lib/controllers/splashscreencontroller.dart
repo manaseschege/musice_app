@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../pages/device_scanning.dart';
+
 class SplashScreenController {
   RxList bodyData = [
     {
@@ -46,10 +48,11 @@ class SplashScreenController {
   RxInt currentShowing = 0.obs;
 
   changeCurrentShowing() async {
-    if (currentShowing.value == bodyData.length - 1) {
+    if(bodyData.length-1==currentShowing.value){
+      Get.off(DeviceScanning());
 
-      currentShowing.value = 0;
-    } else {
+      return;
+    }else {
 
       currentShowing.value = currentShowing.value + 1;
     }
