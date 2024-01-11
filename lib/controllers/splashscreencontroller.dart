@@ -52,9 +52,8 @@ class SplashScreenController {
       Get.off(DeviceScanning());
 
       return;
-    }else {
+}
 
       currentShowing.value = currentShowing.value + 1;
     }
   }
-}
